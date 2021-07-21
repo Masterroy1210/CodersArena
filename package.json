@@ -1,0 +1,34 @@
+{
+  "name": "coders-arena",
+  "version": "1.0.0",
+  "description": "A Web app to  make a coding community around the world to ease developement process and showcase coding skills",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Coders-Arena"
+  ],
+  "author": "Saurav Salunke",
+  "license": "ISC",
+  "dependencies": {
+    "connect-flash": "^0.1.1",
+    "connect-mongo": "^3.2.0",
+    "cookie-parser": "^1.4.5",
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "express-ejs-layouts": "^2.5.0",
+    "express-session": "^1.17.1",
+    "font-awesome": "^4.7.0",
+    "mongoose": "^5.12.4",
+    "multer": "^1.4.2",
+    "node-sass-middleware": "^0.11.0",
+    "particlesjs": "^2.2.3",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "passport-session": "^1.0.2"
+  },
+  "devDependencies": {
+    "colors.css": "^3.0.0"
+  }
+}

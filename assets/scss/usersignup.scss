@@ -1,0 +1,54 @@
+
+#particles-js{
+    position: absolute;
+    width: 100%;
+    height:100vh;
+}
+#text{
+    display:flex;
+    flex-direction:row;
+    position:absolute;
+    top: 50%;
+    right:50%;
+    transform: translate(50%,-50%);
+    max-width: 90%;
+    padding:2em 3em;
+    color:#fff;
+    text-shadow: 0px 0px 2px #131415;
+    font-family:Arial, Helvetica, sans-serif;
+
+    #transparentbox{
+         background-color: rgba(255,204,229, 0.15);
+      }
+
+      #transparentbox:hover{
+          background-color:rgba(255,204,229, 0.4);
+      }
+        input{
+            background:black;
+            padding:4px;
+            margin-top: 20px;
+            color:#bbe1fa;
+            border-color:lightblue;
+            font-family:monospace;
+        }
+        input:hover{
+            border-right: 0;
+            border-top: 0;
+            border-left:0;
+            border-style: ridge;
+        }
+       
+        
+}
+
+p{
+    font-weight:bolder;
+    font-size:larger;
+    font-style: bold;
+    color:#f1bbd5;
+
+}
+p:hover{
+    text-decoration: underline;
+}

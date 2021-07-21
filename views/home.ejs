@@ -1,0 +1,72 @@
+<link rel="stylesheet" href="/css/home.css">
+
+
+<div id="text">  
+  <p id="head"><i class="fas fa-globe"></i> Coders Arena</p>
+    <p id="motto">A platform to showcase your coding skills,Collaborate and develop open source 
+      projects with the community
+    </p>
+  </div>
+  <div id="particles-js"></div>
+<body>
+  
+  
+  
+    <div id="main-container">
+          <section id="feed-post">
+
+      <%if (locals.user){ %>
+      
+      <form action="/posts/create" id="new-post-form" method="POST">
+    
+        <textarea name="content"  cols="30" rows="3" placeholder="Write post here....!"></textarea>
+        <input type="submit" value="POST">
+    
+      </form>
+      <% }%>
+    
+
+      <div id="post-list-container">
+        <ul>
+
+          <% for (post of posts){%>
+
+            <%-include('_post');-%>
+              
+            <%}%>
+
+        </ul>
+
+      </div>
+    </section>
+    <% if(locals.user){%>
+    <section id="user-friends">
+     
+      <h4>FRIENDS</h4>
+      <% for(u of all_users){%>
+  
+        <p>
+          <a href="/users/profile/<%= u.id %>">
+            <i class="fas fa-user-circle"></i>
+            <%= u.name %> 
+          </a>
+        </p>
+  
+        <% } %>
+      
+    </section>  
+    <% } %>
+  </div>
+
+
+
+
+
+
+
+
+<script src="/js/particles.js"></script>
+<script src='/js/app.js'></script>
+<script src='/js/home_post.js'></script>
+
+</body>

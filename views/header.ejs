@@ -1,0 +1,32 @@
+<link rel="stylesheet" href="/css/header.css">
+<header>
+    <script src="https://kit.fontawesome.com/c46275b407.js" crossorigin="anonymous"></script>
+    <img src="/images/logo.jpg">
+    <ul id="button">
+        <% if(locals.user){ %> 
+            <li>
+                <a href="/users/profile/<%=user.id%>">
+                    <i class="fas fa-user-alt"></i>
+                <%= user.name%>
+                </a> 
+                </li>
+            <li>
+                <i class="fas fa-sign-out-alt"></i>
+                <a href="/users/signout">Sign out</a>
+            </li>
+            <% } else{ %>
+            <li>
+                <i class="fas fa-door-closed"></i>
+                <a href="/users/signin">Sign in</a>
+            </li>
+            <li>
+                <i class="fas fa-user-plus"></i>
+                <a href="/users/signup">Sign Up</a>
+            </li>
+
+            <% } %>
+            </ul>
+       
+            
+          
+</header>

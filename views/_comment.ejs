@@ -1,0 +1,23 @@
+<link rel="stylesheet" href="/css/_comment.css">
+
+
+<li>
+  <div id="comment">
+    <P id="username"> <i class="fa fa-user-circle-o" aria-hidden="true"></i><%= comment.user.name%></P>     
+    <% if(locals.user && locals.user.id == comment.user.id){ %>
+      <small>
+        <a href="/comments/destroy/<%=comment.id%>">
+          <i class="fa fa-trash" aria-hidden="true"></i>
+        </a>
+      </small>
+      <% } %>   
+    <p id="content"> <%= comment.content %></p>
+    
+  
+  
+
+
+
+  </div>
+        
+</li>

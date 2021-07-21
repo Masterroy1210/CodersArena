@@ -1,0 +1,29 @@
+header {
+  display: flex;
+  justify-content: space-between;
+  background: black;
+  color: #FFFF;
+  height: 15%;
+  width: auto;
+  margin: 0%; }
+  header #name {
+    padding: 10px;
+    color: #DDDDDD;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-size: larger;
+    font-weight: 100; }
+  header #name:hover {
+    color: #FFFF; }
+  header #button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    list-style-type: none;
+    text-align: center;
+    justify-content: space-between; }
+    header #button a {
+      color: #DDDDDD;
+      font-family: Verdana, Geneva, Tahoma, sans-serif;
+      font-size: 12px;
+      padding: 5px;
+      font-weight: lighter; }
